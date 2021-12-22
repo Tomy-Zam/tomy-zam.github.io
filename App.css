@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(assets/fonts/Ubuntu-Medium.ttf);
+}
+.Header{
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(180deg, #181818, transparent);
+}
+.Header nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 7.5px 20px;
+}
+.Header h1{
+  font-size: 30px;
+}
+.Header ul{
+  display: flex;
+  margin-top: 5px;
+}
+.Header li{
+  list-style: none;
+  margin-right: 18px;
+}
+.Header a{
+  font-family: Ubuntu;
+  text-decoration: none;
+  color: #fff;
+}
+.Header a:hover{
+  font-weight: bold;
+  border-bottom: 3px solid darkorange;
+}
+.dpn{
+  display: none;
+}
+.dpb{
+  display: block;
+}
+.activo{
+  font-weight: bold;
+  border-bottom: 3px solid darkorange;
+
+}

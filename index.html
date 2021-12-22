@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="App">
+        <header class="Header">
+          <nav>
+              <h1>Streaming</h1>
+              <ul>
+                  <li><a onclick="Inicio()" id="ainicio" class="activo">Inicio</a></li>
+                  <li><a onclick="Series()" id="aseries">Series</a></li>
+                  <li><a onclick="Peliculas()" id="apeliculas">Películas</a></li>
+                  <li><a onclick="NovedadesPopulares()" id="anovpo">Novedades populares</a></li>
+                  <li><a onclick="MiLista()" id="amilista">Mi lista</a></li>
+              </ul>
+          </nav>
+        </header>
+        <div class="dpb" id="Inicio"><p>Inicio</p></div>
+        <div class="dpn" id="Series"><p>Series</p></div>
+        <div class="dpn" id="Peliculas"><p>Peliculas</p></div>
+        <div class="dpn" id="NovedadesPopulares"><p>Novedades Populares</p></div>
+        <div class="dpn" id="MiLista"><p>Mi Lista</p></div>
+    </div>
+    <script>
+        function Series (){
+            document.getElementById("Inicio").classList.remove("dpb");
+            document.getElementById("Inicio").classList.add("dpn");
+            document.getElementById("ainicio").classList.remove("activo");
+            document.getElementById("Peliculas").classList.remove("dpb")
+            document.getElementById("Peliculas").classList.add("dpn");
+            document.getElementById("apeliculas").classList.remove("activo");
+            document.getElementById("NovedadesPopulares").classList.remove("dpb");
+            document.getElementById("NovedadesPopulares").classList.add("dpn");
+            document.getElementById("anovpo").classList.remove("activo");
+            document.getElementById("MiLista").classList.remove("dpb");
+            document.getElementById("MiLista").classList.add("dpn");
+            document.getElementById("amilista").classList.remove("activo");
+            document.getElementById("Series").classList.remove("dpn");
+            document.getElementById("Series").classList.add("dpb");
+            document.getElementById("aseries").classList.add("activo");
+        }
+        function Peliculas (){
+            document.getElementById("Inicio").classList.remove("dpb");
+            document.getElementById("Inicio").classList.add("dpn");
+            document.getElementById("ainicio").classList.remove("activo");
+            document.getElementById("Series").classList.remove("dpb")
+            document.getElementById("Series").classList.add("dpn");
+            document.getElementById("aseries").classList.remove("activo");
+            document.getElementById("NovedadesPopulares").classList.remove("dpb");
+            document.getElementById("NovedadesPopulares").classList.add("dpn");
+            document.getElementById("anovpo").classList.remove("activo");
+            document.getElementById("MiLista").classList.remove("dpb");
+            document.getElementById("MiLista").classList.add("dpn");
+            document.getElementById("amilista").classList.remove("activo");
+            document.getElementById("Peliculas").classList.remove("dpn");
+            document.getElementById("Peliculas").classList.add("dpb");
+            document.getElementById("apeliculas").classList.add("activo");
+        }     
+        function NovedadesPopulares (){
+            document.getElementById("Inicio").classList.remove("dpb");
+            document.getElementById("Inicio").classList.add("dpn");
+            document.getElementById("ainicio").classList.remove("activo");
+            document.getElementById("Peliculas").classList.remove("dpb")
+            document.getElementById("Peliculas").classList.add("dpn");
+            document.getElementById("apeliculas").classList.remove("activo");
+            document.getElementById("Series").classList.remove("dpb");
+            document.getElementById("Series").classList.add("dpn");
+            document.getElementById("aseries").classList.remove("activo");
+            document.getElementById("MiLista").classList.remove("dpb");
+            document.getElementById("MiLista").classList.add("dpn");
+            document.getElementById("amilista").classList.remove("activo");
+            document.getElementById("NovedadesPopulares").classList.remove("dpn");
+            document.getElementById("NovedadesPopulares").classList.add("dpb");
+            document.getElementById("anovpo").classList.add("activo");
+        }
+        function MiLista (){
+            document.getElementById("Inicio").classList.remove("dpb");
+            document.getElementById("Inicio").classList.add("dpn");
+            document.getElementById("ainicio").classList.remove("activo");
+            document.getElementById("Peliculas").classList.remove("dpb")
+            document.getElementById("Peliculas").classList.add("dpn");
+            document.getElementById("apeliculas").classList.remove("activo");
+            document.getElementById("NovedadesPopulares").classList.remove("dpb");
+            document.getElementById("NovedadesPopulares").classList.add("dpn");
+            document.getElementById("anovpo").classList.remove("activo");
+            document.getElementById("Series").classList.remove("dpb");
+            document.getElementById("Series").classList.add("dpn");
+            document.getElementById("aseries").classList.remove("activo");
+
+            
+            document.getElementById("MiLista").classList.remove("dpn");
+            document.getElementById("MiLista").classList.add("dpb");
+            document.getElementById("amilista").classList.add("activo");
+        }
+        function Inicio (){
+            document.getElementById("Series").classList.remove("dpb");
+            document.getElementById("Series").classList.add("dpn");
+            document.getElementById("aseries").classList.remove("activo");
+            document.getElementById("Peliculas").classList.remove("dpb")
+            document.getElementById("Peliculas").classList.add("dpn");
+            document.getElementById("apeliculas").classList.remove("activo");
+            document.getElementById("NovedadesPopulares").classList.remove("dpb");
+            document.getElementById("NovedadesPopulares").classList.add("dpn");
+            document.getElementById("anovpo").classList.remove("activo");
+            document.getElementById("MiLista").classList.remove("dpb");
+            document.getElementById("MiLista").classList.add("dpn");
+            document.getElementById("amilista").classList.remove("activo");
+            document.getElementById("Inicio").classList.remove("dpn");
+            document.getElementById("Inicio").classList.add("dpb");
+            document.getElementById("ainicio").classList.add("activo");
+        }
+    </script>
+</body>
+</html>
